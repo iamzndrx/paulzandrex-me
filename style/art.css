@@ -1,0 +1,229 @@
+body {
+	background-color: #F3EAFA;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #F3EAFA;
+}
+
+li {
+	float: right;
+	margin: 10px;
+}
+
+li a {
+	color: #000000;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	padding: 14px 16px;
+	font-family: Century Gothic, Verdana, sans-serif;
+}
+
+li a:hover {
+	color: #109085;
+	text-decoration: none;
+}
+
+.art-btn {
+	color: #E15336;
+}
+
+.social-btn {
+    float: left;
+	margin: 20px 20px 10px 10px;
+}
+
+.fa {
+	padding: 9px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	background: #F3EAFA;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007BB5;
+	color: white;
+}
+
+.PZ-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 5%;
+	height: 5%;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+}
+
+.PZ-logo:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.PZ-logo span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -120%;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: 0.4s;
+	transform: skewX(10deg);
+}
+
+.PZ-logo img {
+	width: 100%;
+}
+
+.PZ-logo:hover span {
+	left: 120%;
+}
+
+.art-header {
+	padding: 32px;
+}
+
+.art-header h1 {
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.Art {
+	color: #E15336;
+}
+
+.art-header p {
+	font-style: italic;
+	text-align: center;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.art-header i {
+	font-size: 30px;
+	color: #E15336;
+	font-style: italic;
+	text-align: center;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	-ms-flex: 25%;
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	cursor: pointer;
+	margin-top: 8px;
+	vertical-align: middle;
+	transition: 0.3s;
+	width: 100%;
+}
+
+.column img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.art-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.art-modal-content {
+	margin: auto;
+	display: block;
+	width: 25%;
+	max-width: 1000px;
+}
+
+.art-modal-content {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+.art-close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #E15336;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.art-close:hover, .art-close:focus {
+	color: #BBBBBB;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.art-modal-content {
+		width: 100%;
+	}
+}
+

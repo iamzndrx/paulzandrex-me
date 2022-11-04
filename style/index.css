@@ -1,0 +1,168 @@
+body {
+	background-color: #F3EAFA;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #F3EAFA;
+}
+
+ul .PZ-logo {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    width: 5%;
+	height: 5%;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+    float: left;
+	margin: 11px;
+}
+
+ul .PZ-logo:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+ul .PZ-logo span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -120%;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: 0.4s;
+	transform: skewX(10deg);
+}
+
+ul .PZ-logo img {
+	width: 100%;
+}
+
+ul .PZ-logo:hover span {
+	left: 120%;
+}
+
+li {
+	float: right;
+	margin: 10px;
+}
+
+li a {
+	color: #000000;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	padding: 14px 16px;
+	font-family: Century Gothic, Verdana, sans-serif;
+}
+
+li a:hover {
+	color: #E15336;
+	text-decoration: none;
+}
+
+.home-btn {
+	color: #109085;
+}
+
+.index-cont {
+	margin-top: 80px;
+}
+
+.row {
+	width: 100%;
+	margin: 0 10px 10px 10px;
+}
+
+.row h1 {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Century Gothic, Verdana, sans-serif;
+	margin-bottom: 25px;
+}
+
+.row p {
+	font-family: Century Gothic, Verdana, sans-serif;
+}
+
+.Zandrex-color {
+	color: #109085;
+}
+
+.onecolumn {
+	width: 50%;
+}
+
+.onecolumn p img {
+	width: 20px;
+	height: 20px; 
+}
+
+.twocolumn {
+	width: 50%;
+}
+
+.twocolumn img {
+	margin-left: 20%;
+	width: auto;
+    height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-envelope {
+	font-size: 20px;
+}
+
+.fa-phone {
+	font-size: 20px;
+}
+
+.fa {
+	padding: 9px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	background: #F3EAFA;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: #FFFFFF;
+}
+
+.fa-linkedin {
+	background: #007BB5;
+	color: #FFFFFF;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.downloadbutton {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #109085;
+}
+
+.downloadbutton:hover {
+	background-color: #E15336;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+}
+
