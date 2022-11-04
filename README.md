@@ -1,2 +1,2 @@
 # paulzandrex-me
-Website Portfolio using PHP HTML
+Website Portfolio using HTML
